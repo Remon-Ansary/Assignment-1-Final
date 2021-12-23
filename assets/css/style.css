@@ -752,22 +752,37 @@ h6 {
   font-weight: bold;
   left: 3;
   top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 #textdown {
-  z-index: 100;
   position: absolute;
-  color: white;
+  color: rgb(255, 152, 152);
   font-size: 11px;
   font-weight: bold;
   left: 10;
-  bottom: 0;
+
+  padding-left: 10px;
+  padding-top: 200px;
 }
 #textdownlink {
-  z-index: 100;
   position: absolute;
-  color: rgb(43, 175, 199);
-  font-size: 11px;
+  color: rgb(44, 227, 252);
+  font-size: 17px;
   font-weight: bold;
   left: 10;
-  bottom: 0;
+
+  padding-left: 10px;
+  padding-top: 160px;
+}
+#textbanner {
+  z-index: 100;
+  position: absolute;
+  color: rgb(44, 227, 252);
+  font-size: 17px;
+  font-weight: bold;
+  left: 3;
+  top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
 }
