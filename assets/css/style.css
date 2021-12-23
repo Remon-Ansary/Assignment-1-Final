@@ -262,7 +262,7 @@ h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../img/slide/slide-1.jpg") top center;
+  background: url("../img/images/hero-img.jpeg") top center;
   background-size: cover;
   position: relative;
 }
@@ -777,7 +777,7 @@ h6 {
   bottom: 10px;
 }
 .lastimage {
-  background-image: url("https://images.pexels.com/photos/5193169/pexels-photo-5193169.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); /* The image used */
+  background-image: url("../img/images/last-1.jpeg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 200px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -785,7 +785,7 @@ h6 {
   background-size: cover;
 }
 .lastimage1 {
-  background-image: url("https://images.pexels.com/photos/5193169/pexels-photo-5193169.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); /* The image used */
+  background-image: url("../img/images/last-2.jpeg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 200px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -793,7 +793,7 @@ h6 {
   background-size: cover;
 }
 .lastimage2 {
-  background-image: url("https://images.pexels.com/photos/5193169/pexels-photo-5193169.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); /* The image used */
+  background-image: url("../img/images/last-3.jpeg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 200px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -801,7 +801,7 @@ h6 {
   background-size: cover;
 }
 .lastimage3 {
-  background-image: url("https://images.pexels.com/photos/5193169/pexels-photo-5193169.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); /* The image used */
+  background-image: url("../img/images/last-4.jpeg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 200px; /* You must set a specified height */
   background-position: center; /* Center the image */
