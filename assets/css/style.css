@@ -769,20 +769,27 @@ h6 {
   position: absolute;
   color: rgb(44, 227, 252);
   font-size: 17px;
-  font-weight: bold;
-  left: 10;
 
+  left: 10;
   padding-left: 10px;
-  padding-top: 160px;
+  padding-top: 140px;
 }
 #textbanner {
   z-index: 100;
   position: absolute;
-  color: rgb(44, 227, 252);
+  color: rgb(153, 228, 238);
   font-size: 17px;
   font-weight: bold;
-  left: 3;
+  left: 3px;
   top: 0;
   padding-left: 10px;
   padding-top: 10px;
+}
+#textdownicon {
+  z-index: 100;
+  position: absolute;
+  color: rgb(153, 228, 238);
+
+  right: 5px;
+  bottom: 10px;
 }
