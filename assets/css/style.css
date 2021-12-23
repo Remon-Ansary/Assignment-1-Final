@@ -825,3 +825,8 @@ h6 {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+.copy-icon {
+  float: right;
+  padding-top: 4px;
+  color: white;
+}
