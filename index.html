@@ -8,9 +8,22 @@
   <title>Rental</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
-
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+   
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -91,17 +104,135 @@
           <br />
           <div class="row justify-content-center">
             <div class="container">
-              <div class="row height d-flex justify-content-center align-items-center">
+              <!-- <div class="row height d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
                   <div class="form"> <i class="fa fa-search"></i> <input type="text" class="form-control form-input"
                       placeholder="Search..."> <span class="left-pan"></span>
                   </div>
                 </div>
+              </div> -->
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-12">
+                  <form class="card card-lg">
+                    <div class=" card-body  row no-gutters
+                                align-items-center 
+                              ">
+                      <!-- <div class="col-auto">
+
+                        <i class="fas fa-search"></i>
+                      </div> -->
+
+                      <div class="col-md-2" >
+                         <div class="form"> <i class="fa fa-search"  ></i> <input type="text" class="form-control form-input"
+                      placeholder="Search..."> <span class="left-pan"></span>
+                      </div>
+                       
+                      </div>
+
+
+                      <div class="col-md-4" >
+                     <div class="label">
+                      <Span  style=" font-size:22px;">    <i class="far fa-calendar-alt" style=" font-size:24px;" > </i>&nbsp; Check in &nbsp;   >   Check out &nbsp;</Span>
+                    </div>
+                      </div>
+
+
+                      <div class="col-md-2">
+                           <div class="label">
+                      <Span  style=" font-size:22px;"> <i class="fas fa-users"></i> Guest <i class="fas fa-chevron-circle-down"></i> </Span> 
+                    </div>
+                      </div>
+
+
+                       <div class="col-md-2">
+                            <div class="label">
+                      <Span  >  Price Range <span class="dropdown" style="width: 500px;height:50px"><span class=" dropdown-toggle"
+                          data-toggle="dropdown">
+                        </span> <div class="dropdown-menu col-xs-12" style="width:100px">
+         <div class="row">
+        <div class="col-md-12">hello </div>
+      </div>
+          <div class="card">
+           <div class="container"></div>
+          
+           <div class="qty mt-5">
+              <span class="minus bg-dark" onclick="decrement()">-</span>
+              <p type="number" id="counting" class="count" value="1"></p>
+              <span class="plus bg-dark" onclick="increment()">+</span>
+            </div>
+          
+          </div>
+          <button  data-toggle="dropdown" class="btn btn-success" style="float:right; ">Apply</button>
+        </div>
+                      </span>
+                    </Span> 
+                    </div>
+                      </div>
+
+                      <div class="col-2">
+                        <button class="btn btn-lg btn-success" type="submit"  onclick="allData()">
+                          Search
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
               </div>
+
+              <!-- <div class="row">
+          <div class="col-md-3" style="border-radius: 20px;">
+            <div class="card" style="border-radius: 20px;">
+              <p id="text">
+                The best place to view city
+              </p>
+        
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="card ">
+              <p id="text">
+                Washington, United States
+              </p>
+            
+              <p id="textdown">
+                By Staff Writter
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style=" ">
+              <p id="text">
+                The night life and food
+              </p>
+           
+              </a>
+
+
+            </div>
+          </div>
+
+        </div> -->
             </div>
           </div>
     </section>
   </div>
+<div class="container">
+        <h2>Dropdowns</h2>
+        <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Phantom</a></li>
+                <li><a href="#">Cluster</a></li>
+                <button onclick="allData()" class="btn btn-success"> Search</button>
+            </ul>
+
+        </div>
+    </div>
+
+
   <!-- End Hero -->
   <br>
   <section class="portfolio">
