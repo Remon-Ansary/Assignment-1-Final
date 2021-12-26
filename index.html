@@ -34,13 +34,13 @@
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Main CSS File -->
@@ -98,10 +98,11 @@
   <div class="container">
     <section id="hero" class="d-flex align-items-center justify-content-center">
       <div class="container position-relative">
+           <br />
         <h2>Journeys</h2>
         <h1>Stories From Around the World</h1>
         <div class="container">
-          <br />
+         
           <div class="row justify-content-center">
             <div class="container">
               <!-- <div class="row height d-flex justify-content-center align-items-center">
@@ -111,111 +112,119 @@
                   </div>
                 </div>
               </div> -->
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-12">
-                  <form class="card card-lg">
-                    <div class=" card-body  row no-gutters
-                                align-items-center 
-                              ">
-                      <!-- <div class="col-auto">
+                 <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-12">
+        <form class="card card-lg">
+          <div class="card-body row no-gutters align-items-center">
+            <!-- <div class="col-auto">
 
                         <i class="fas fa-search"></i>
                       </div> -->
 
-                      <div class="col-md-2" >
-                         <div class="form"> <i class="fa fa-search"  ></i> <input type="text" class="form-control form-input"
-                      placeholder="Search..."> <span class="left-pan"></span>
-                      </div>
-                       
-                      </div>
-
-
-                      <div class="col-md-4" >
-                     <div class="label">
-                      <Span  style=" font-size:22px;">    <i class="far fa-calendar-alt" style=" font-size:24px;" > </i>&nbsp; Check in &nbsp;   >   Check out &nbsp;</Span>
-                    </div>
-                      </div>
-
-
-                      <div class="col-md-2">
-                           <div class="label">
-                      <Span  style=" font-size:22px;"> <i class="fas fa-users"></i> Guest <i class="fas fa-chevron-circle-down"></i> </Span> 
-                    </div>
-                      </div>
-
-
-                       <div class="col-md-2">
-                            <div class="label">
-                      <Span  >  Price Range <span class="dropdown" style="width: 500px;height:50px"><span class=" dropdown-toggle"
-                          data-toggle="dropdown">
-                        </span> <div class="dropdown-menu col-xs-12" style="width:100px">
-         <div class="row">
-        <div class="col-md-12">hello </div>
-      </div>
-          <div class="card">
-           <div class="container"></div>
-          
-           <div class="qty mt-5">
-              <span class="minus bg-dark" onclick="decrement()">-</span>
-              <p type="number" id="counting" class="count" value="1"></p>
-              <span class="plus bg-dark" onclick="increment()">+</span>
-            </div>
-          
-          </div>
-          <button  data-toggle="dropdown" class="btn btn-success" style="float:right; ">Apply</button>
-        </div>
-                      </span>
-                    </Span> 
-                    </div>
-                      </div>
-
-                      <div class="col-2">
-                        <button class="btn btn-lg btn-success" type="submit"  onclick="allData()">
-                          Search
-                        </button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
+            <div class="col-md-2">
+              <div class="form">
+                <i class="fa fa-search"></i>
+                <input
+                  type="text"
+                  class="form-control form-input"
+                  placeholder="Search..."
+                />
+                <span class="left-pan"></span>
               </div>
-
-              <!-- <div class="row">
-          <div class="col-md-3" style="border-radius: 20px;">
-            <div class="card" style="border-radius: 20px;">
-              <p id="text">
-                The best place to view city
-              </p>
-        
             </div>
 
-          </div>
-          <div class="col-md-6">
-            <div class="card ">
-              <p id="text">
-                Washington, United States
-              </p>
-            
-              <p id="textdown">
-                By Staff Writter
-              </p>
+            <div class="col-md-4">
+              <div class="label">
+                <span style="font-size: 22px">
+                  <i class="far fa-calendar-alt" style="font-size: 24px"> </i
+                  >&nbsp; Check in &nbsp; > Check out &nbsp;</span
+                >
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="">
+                <span
+                  ><i class="fas fa-users"></i> Guest
+                  <span class="dropdown"
+                    ><span class="dropdown-toggle" data-toggle="dropdown">
+                    </span>
+                    <div class="dropdown-menu "  class="quantity">
+                      <div class="row"></div>
+                      <div class="card" style="align-items: center;">
+                        <div class="container"></div>
+
+                        <div class="qty mt-5" >
+                          <span class="minus bg-warning" onclick="decrement()"
+                            >-</span
+                          >
+                          <p
+                            type="number"
+                            id="counting"
+                            class="count"
+                            value="1"
+                          ></p>
+                          <span class="plus bg-warning" onclick="increment()"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                      <button
+                        data-toggle="dropdown"
+                        class="btn btn-success"
+                        style="float: right"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div >
+                <span
+                  ></i> Price
+                  <span class="dropdown" 
+                    ><span class="dropdown-toggle" data-toggle="dropdown">
+                    </span>
+                     <div class="dropdown-menu "  class="quantity">
+                      <div class="row"></div>
+                      <div class="card" style="align-items: center;">
+                        <div class="container"></div>
+
+                            
+                 
+                      
+                      </div>
+                      <button
+                        data-toggle="dropdown"
+                        class="btn btn-success"
+                        style="float: right"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </span>
+                </span>
+              </div>
+            </div>
+ 
+            <div class="col-2">
+              <button
+                class="btn btn-lg btn-success"
+                type="button"
+                id="search"
+                onclick="allData()"
+              >
+                Search
+              </button>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" style=" ">
-              <p id="text">
-                The night life and food
-              </p>
-           
-              </a>
-
-
-            </div>
-          </div>
-
-        </div> -->
-            </div>
-          </div>
+        </form>
+      </div>
+    </div>
     </section>
   </div>
 <div class="container">
@@ -520,17 +529,17 @@
       </div>
   </footer><!-- End Footer -->
 
-
+<script src="assets/js/main.js"></script>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+ 
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
 
   <!--  Main JS File -->
-  <script src="assets/js/main.js"></script>
+  
 </body>
 
 </html>

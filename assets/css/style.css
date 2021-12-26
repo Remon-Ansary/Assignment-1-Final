@@ -53,13 +53,7 @@ h6 {
 #header .logo img {
   max-height: 40px;
 }
-.label {
-  color: rgb(0, 0, 0);
-  font-size: 16px;
 
-  font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
-}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -613,7 +607,17 @@ h6 {
   padding-top: 4px;
   color: white;
 }
-
+@media (min-width: 768px) {
+  .dropdown-menu {
+    width: 300px !important;
+  }
+}
+@media (min-height: 300px) {
+  .dropdown-menu {
+    width: 300px !important;
+  }
+}
+/* increment */
 .qty .count {
   color: #000;
   display: inline-block;
@@ -648,7 +652,7 @@ h6 {
   border-radius: 50%;
   background-clip: padding-box;
 }
-div {
+.quantity {
   text-align: center;
 }
 .minus:hover {
@@ -674,9 +678,4 @@ input::-webkit-inner-spin-button {
 }
 input:disabled {
   background-color: white;
-}
-@media (min-width: 768px) {
-  .dropdown-menu {
-    width: 300px !important;
-  }
 }

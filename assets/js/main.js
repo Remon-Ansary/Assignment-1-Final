@@ -114,6 +114,8 @@ function getVals() {
 
   var displayElement = parent.getElementsByClassName("rangeValues")[0];
   displayElement.innerHTML = "" + slide1 + " - " + slide2;
+  var x = slide1;
+  var y = slide2;
 }
 
 window.onload = function () {
@@ -151,9 +153,13 @@ function decrement() {
   document.getElementById("counting").innerText = data;
 }
 
-let fetchRes = fetch(
-  "https://www.vacationhomerentals.com/content/srp/saut?s=madrid"
-);
+function allData() {
+  console.log(data);
+}
+
+// let fetchRes = fetch(
+//   "https://www.vacationhomerentals.com/content/srp/saut?s=madrid"
+// );
 
 // fetchRes is the promise to resolve
 // it by using.then() method
@@ -162,11 +168,6 @@ let fetchRes = fetch(
 //   .then((d) => {
 //     console.log(d);
 //   });
-function allData() {
-  console.log(data);
-  console.log(slide1);
-  console.log(slide2);
-}
 $(document).on("click", ".dropdown-menu", function (e) {
   e.stopPropagation();
 });
