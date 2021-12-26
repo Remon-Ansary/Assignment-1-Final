@@ -172,12 +172,28 @@ $(document).on("click", ".dropdown-menu", function (e) {
 
 // slider
 
+// date picker
+var hdpkr = new HotelDatepicker(document.getElementById("input-id"));
+var s = this.startDate;
+var input = document.getElementById("input-id");
+
+// input.addEventListener(
+//   "afterClose",
+//   function getValue() {
+//     console.log(this.startDate);
+//   },
+//   false
+// );
+// function getNextMonth(month) {
+//   // Get next month date
+//   const _m = new Date(month.valueOf());
+
+//   return new Date(_m.setMonth(_m.getMonth() + 1, 1));
+// }
+console.log(hdpkr);
 function allData() {
   console.log(data);
   console.log(slideg1);
   console.log(slideg2);
+  console.log(input.value);
 }
-
-// date picker
-var hdpkr = new HotelDatepicker(document.getElementById("input-id"));
-console.log(hdpkr);
