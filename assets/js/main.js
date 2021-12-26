@@ -114,8 +114,8 @@ function getVals() {
 
   var displayElement = parent.getElementsByClassName("rangeValues")[0];
   displayElement.innerHTML = "" + slide1 + " - " + slide2;
-  var x = slide1;
-  var y = slide2;
+  console.log(slide1);
+  console.log(slide2);
 }
 
 window.onload = function () {
@@ -130,6 +130,11 @@ window.onload = function () {
         sliders[y].oninput();
       }
     }
+  }
+  function allData() {
+    console.log(data);
+    console.log(slide1);
+    console.log(slide2);
   }
 };
 
@@ -153,10 +158,6 @@ function decrement() {
   document.getElementById("counting").innerText = data;
 }
 
-function allData() {
-  console.log(data);
-}
-
 // let fetchRes = fetch(
 //   "https://www.vacationhomerentals.com/content/srp/saut?s=madrid"
 // );
@@ -171,3 +172,41 @@ function allData() {
 $(document).on("click", ".dropdown-menu", function (e) {
   e.stopPropagation();
 });
+
+// slider
+
+var parent = this.parentNode;
+var slides = parent.getElementsByTagName("input");
+var slide1 = parseFloat(slides[0].value);
+var slide2 = parseFloat(slides[1].value);
+// Neither slider will clip the other, so make sure we determine which is larger
+if (slide1 > slide2) {
+  var tmp = slide2;
+  slide2 = slide1;
+  slide1 = tmp;
+}
+
+var displayElement = parent.getElementsByClassName("rangeValues")[0];
+displayElement.innerHTML = "" + slide1 + " - " + slide2;
+console.log(slide1);
+console.log(slide2);
+
+window.onload = function () {
+  // Initialize Sliders
+  let sliderSections = document.getElementsByClassName("range-slider");
+  for (let x = 0; x < sliderSections.length; x++) {
+    let sliders = sliderSections[x].getElementsByTagName("input");
+    for (let y = 0; y < sliders.length; y++) {
+      if (sliders[y].type === "range") {
+        sliders[y].oninput = getVals;
+        // Manually trigger event first time to display values
+        sliders[y].oninput();
+      }
+    }
+  }
+};
+function allData() {
+  console.log(data);
+  console.log(slideg);
+  console.log(slideg2);
+}
