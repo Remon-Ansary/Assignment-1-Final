@@ -8,7 +8,13 @@
   <title>Rental</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
+
+   <link href="./hotel-datepicker/dist/css/hotel-datepicker.css" rel="stylesheet"><!-- Optional -->
+    <script src="./fecha-4.2.1/dist/fecha.min.js"></script>
+    <script src="./hotel-datepicker/dist/js/hotel-datepicker.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+ 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -136,10 +142,14 @@
 
             <div class="col-md-4">
               <div class="label">
-                <span style="font-size: 22px">
-                  <i class="far fa-calendar-alt" style="font-size: 24px"> </i
-                  >&nbsp; Check in &nbsp; > Check out &nbsp;</span
+                <span style="font-size: 15px">
+                
+                  <i class="far fa-calendar-alt"  id="input-id" style="font-size: 20px"> </i
+                  > &nbsp; Check in &nbsp; > Check out &nbsp;
+              
+                  </span
                 >
+              
               </div>
             </div>
 
@@ -192,26 +202,19 @@
                     </span>
                      <div class="dropdown-menu "  class="quantity">
                       <div class="row"></div>
-                      <div class="card"  style="align-items: center;display: flex;
-  height: 10vh;">
+                      <div class="card"  style="align-items: center;display: flex;height: 10vh;">
                         <div class="container"></div>
-                         
-  
-            <div class="range-slider">
-              <span class="rangeValues"></span>
-              <input value="0" min="0" max="50000" step="500" type="range" />
-              <input
-                value="50000"
-                min="1000"
-                max="50000"
-                step="500"
-                type="range"
-              />
-            </div>
-          
-                            
-                 
-                      
+                      <div class="range-slider">
+                       <span class="rangeValues"></span>
+                      <input value="0" min="0" max="50000" step="500" type="range" />
+                     <input
+                          value="50000"
+                          min="1000"
+                          max="50000"
+                          step="500"
+                         type="range"/>
+                         </div>
+
                       </div>
                       <button
                         data-toggle="dropdown"
@@ -242,7 +245,10 @@
     </div>
     </section>
   </div>
+
+ 
 <div class="container">
+  
         <h2>Dropdowns</h2>
         <div class="dropdown">
             <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
