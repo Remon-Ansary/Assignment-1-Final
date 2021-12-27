@@ -200,14 +200,18 @@ function showDate() {
 function onOpenDatepicker() {
   console.log("Day clicked!");
 }
+
 console.log(hdpkr);
 function allData() {
   console.log(data);
   console.log(slideg1);
   console.log(slideg2);
-  console.log(input.value);
-
-  document.getElementById("modalCheckin").innerHTML = input.value;
+  //console.log(input.value);s
+  const splitData = input.value.split(" ");
+  console.log(splitData[0]);
+  console.log(splitData[2]);
+  document.getElementById("modalCheckin").innerHTML = splitData[0];
+  document.getElementById("modalCheckout").innerHTML = splitData[2];
   document.getElementById("Guests").innerHTML = data;
   document.getElementById("priceRange").innerHTML =
     "৳" + slideg1 + "-" + "৳" + slideg2;
