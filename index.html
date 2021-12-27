@@ -167,7 +167,7 @@
                   <form class="card " style="margin-top:30px;height:40px">
                     <div class=" row no-gutters align-items-center " style="padding:5px">
                       <div class="col-auto">
-                        <i class="fas fa-users"> &nbsp;<span id="count-value">Guest</span></i>
+                       <i class="fas fa-users"> &nbsp;<span id="count-value">Guest</span></i>
                       </div>
 
                       <div class="col">
@@ -179,15 +179,20 @@
                               <div class="container"></div>
 
                               <div class="qty ">
+                                <span> Guests &nbsp; </span>
                                 <span class="minus bg-warning" onclick="decrement()">-</span>
                                 <p type="number" id="counting" class="count" value="1"></p>
-                                <span class="plus bg-warning" onclick="increment()">+</span>
-                              </div>
-                              <Span style="float: right">
-                                <button data-toggle="dropdown" class="btn btn-warning" style="float: right"
+                                <span class="plus bg-warning" onclick="increment()">+</span> &nbsp;
+                                 <button data-toggle="dropdown" class="btn btn-warning" style="float: right"
                                   onclick="countGuest()">
                                   Apply
-                                </button></Span>
+                                </button>
+                              </div>
+                            
+                                <!-- <button data-toggle="dropdown" class="btn btn-warning" style="float: right"
+                                  onclick="countGuest()">
+                                  Apply
+                                </button> -->
 
 
                             </div>
@@ -209,7 +214,7 @@
                   <form class="card " style="margin-top:30px;height:40px">
                     <div class=" row no-gutters align-items-center " style="padding:5px">
                       <div class="col-auto">
-                        <i class="fas fa-"> &nbsp;<span id="price-value">Price Range</span></i>
+                        <i class="dropdown"> &nbsp;<span id="price-value">Price Range</span></i>
                       </div>
 
                       <div class="col">
@@ -222,12 +227,17 @@
                               <div class="range-slider">
                                 <span class="rangeValues"></span>
                                 <input value="0" min="0" max="50000" step="500" type="range" />
-                                <input value="50000" min="1000" max="50000" step="500" type="range" />
+                                <input value="50000" min="1000" max="50000" step="500" type="range" />  
+                                
+                                <!-- <button data-toggle="dropdown" class="btn btn-warning lg" style="float: right"
+                              onclick="priceRange()">
+                              Apply
+                            </button> --><br>
                               </div>
 
                             </div>
                             <br>
-                            <button data-toggle="dropdown" class="btn btn-warning lg" style="float: right"
+                            <button  class="btn btn-warning lg" style="float: right"margin-right="10px"
                               onclick="priceRange()">
                               Apply
                             </button>
@@ -257,12 +267,12 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                       <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3s type="button"  data-dismiss="modal">Searched Values</h3s>
                         <h4 class="modal-title"></h4>
                       </div>
                       <div class="modal-body">
                        
-                            <ul>Check In: <span id="modalLocation"></span></ul>
+                            <ul>Search: <span id="modalLocation"></span></ul>
                         <ul>Check In: <span id="modalCheckin"></span></ul>
                         <ul> Check Out: <span id="modalCheckout"></span></ul>
                         <ul><span id="modalCheckouts"></span></ul>

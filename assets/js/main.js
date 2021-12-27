@@ -219,8 +219,6 @@ function allData() {
 }
 
 // api section
-
-var checkVal = document.querySelector("#search");
 var matchList = document.querySelector("#list");
 var searchValue = async (e) => {
   fetch("https://www.vacationhomerentals.com/content/srp/saut?s=Las%20vegas", {
@@ -254,6 +252,8 @@ var show = (matchData) => {
     };
   }
 };
+var checkVal = document.querySelector("#search");
+
 checkVal.addEventListener("input", () => searchValue(checkVal.value));
 const json = [
   {
