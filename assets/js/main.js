@@ -216,3 +216,89 @@ function allData() {
   document.getElementById("priceRange").innerHTML =
     "৳" + slideg1 + "-" + "৳" + slideg2;
 }
+
+// api section
+
+var checkVal = document.querySelector("#search");
+var matchList = document.querySelector("#list");
+var searchValue = async (e) => {
+  fetch("https://www.vacationhomerentals.com/content/srp/saut?s=Las%20vegas", {
+    method: "GET",
+    mode: "no-cors",
+  }).then(function (res) {
+    json;
+    if (res.body === null) {
+      var matchData = json.filter((json) => {
+        var regex = new RegExp(e.split("").join("\\w*").replace(/\W/, ""), "i");
+        return json.Name.match(regex);
+      });
+      if (e.length < 1) {
+        matchData = [];
+        list.innerHTML = " ";
+      }
+      show(matchData);
+    }
+  });
+};
+
+var show = (matchData) => {
+  if (matchData.length > 0) {
+    const showhtml = matchData
+      .map((match) => `<li>${match.Name}</li>`)
+      .join("");
+    list.innerHTML = showhtml;
+    list.onclick = function (e) {
+      const clickedValue = e.target.innerText;
+      checkVal.value = clickedValue;
+      console.log(clickedValue);
+      this.innerHTML = "";
+    };
+  }
+};
+checkVal.addEventListener("input", () => searchValue(checkVal.value));
+const json = [
+  {
+    id: 503358,
+    Name: "Province of Ragusa, Sicily, Italy",
+    Count: 51,
+    SlashName: "italy/sicily/province-of-ragusa-vacation-rentals/g100503358",
+  },
+  {
+    id: 416298,
+    Name: "Jerusalem, Jerusalem District, Israel",
+    Count: 4,
+    SlashName: "Israel/Jerusalem-vacation-rentals/g2579/",
+  },
+  {
+    id: 407700,
+    Name: "Jerusalem District, Israel",
+    Count: 4,
+    SlashName: "israel/jerusalem-district-vacation-rentals/g100407700",
+  },
+  {
+    id: 686343,
+    Name: "Marausa, Trapani, Italy",
+    Count: 2,
+    SlashName:
+      "sicily/province-of-trapani/trapani/marausa-vacation-rentals/g100686343",
+  },
+  {
+    id: 414003,
+    Name: "Husafell, West Region, Iceland",
+    Count: 2,
+    SlashName: "iceland/west-region/husafell-vacation-rentals/g100414003",
+  },
+  {
+    id: 414006,
+    Name: "Husavik, Northeast Region, Iceland",
+    Count: 2,
+    SlashName: "iceland/northeast-region/husavik-vacation-rentals/g100414006",
+  },
+  {
+    id: 574074,
+    Name: "Llanddeusant, Anglesey, United Kingdom",
+    Count: 1,
+    SlashName:
+      "wales/north-wales/anglesey/llanddeusant-vacation-rentals/g100574074",
+  },
+];
