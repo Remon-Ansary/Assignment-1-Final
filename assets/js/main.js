@@ -115,7 +115,8 @@ function getVals() {
   }
 
   var displayElement = parent.getElementsByClassName("rangeValues")[0];
-  displayElement.innerHTML = "" + slide1 + " - " + slide2;
+  displayElement.innerHTML =
+    "Price Range" + "৳" + slide1 + " - " + "৳" + slide2;
   slideg1 = slide1;
   slideg2 = slide2;
 }
@@ -174,6 +175,7 @@ $(document).on("click", ".dropdown-menu", function (e) {
 
 // date picker
 var hdpkr = new HotelDatepicker(document.getElementById("input-id"));
+
 var s = this.startDate;
 var input = document.getElementById("input-id");
 
@@ -190,10 +192,23 @@ var input = document.getElementById("input-id");
 
 //   return new Date(_m.setMonth(_m.getMonth() + 1, 1));
 // }
-function count() {
+function countGuest() {
   document.getElementById("count-value").innerHTML = data;
 }
-
+function priceRange() {
+  document.getElementById("price-value").innerHTML =
+    "৳" + slideg1 + "-" + "৳" + slideg2;
+}
+function priceRange() {
+  document.getElementById("price-value").innerHTML =
+    "৳" + slideg1 + "-" + "৳" + slideg2;
+}
+function showDate() {
+  document.getElementById("dateData").innerHTML = input.value;
+}
+function onOpenDatepicker() {
+  console.log("Day clicked!");
+}
 console.log(hdpkr);
 function allData() {
   console.log(data);
