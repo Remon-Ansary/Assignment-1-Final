@@ -109,7 +109,7 @@ function getVals() {
   var slides = parent.getElementsByTagName("input");
   var slide1 = parseFloat(slides[0].value);
   var slide2 = parseFloat(slides[1].value);
-  // Neither slider will clip the other, so make sure we determine which is larger
+  //
   if (slide1 > slide2) {
     var tmp = slide2;
     slide2 = slide1;
@@ -118,7 +118,7 @@ function getVals() {
 
   var displayElement = parent.getElementsByClassName("rangeValues")[0];
   displayElement.innerHTML =
-    "Price Range" + "৳" + slide1 + " - " + "৳" + slide2;
+    "Price Range: " + "৳" + slide1 + " - " + "৳" + slide2;
   slideg1 = slide1;
   slideg2 = slide2;
 }
@@ -142,7 +142,7 @@ window.onload = function () {
 //initialising a variable name data
 var data = 0;
 
-//printing default value of data that is 0 in h2 tag
+//printing default value
 document.getElementById("counting").innerText = data;
 
 //creation of increment function
@@ -158,18 +158,6 @@ function decrement() {
   }
   document.getElementById("counting").innerText = data;
 }
-
-// let fetchRes = fetch(
-//   "https://www.vacationhomerentals.com/content/srp/saut?s=madrid"
-// );
-
-// fetchRes is the promise to resolve
-// it by using.then() method
-// fetchRes
-//   .then((res) => res.json())
-//   .then((d) => {
-//     console.log(d);
-//   });
 
 // To Stop dropdown behaviour
 $(document).on("click", ".dropdown-menu", function (e) {
@@ -206,7 +194,7 @@ function allData() {
   console.log(data);
   console.log(slideg1);
   console.log(slideg2);
-  //console.log(input.value);s
+
   const splitData = input.value.split(" ");
   console.log(splitData[0]);
   console.log(splitData[2]);
