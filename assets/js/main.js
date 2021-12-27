@@ -210,6 +210,7 @@ function allData() {
   const splitData = input.value.split(" ");
   console.log(splitData[0]);
   console.log(splitData[2]);
+  document.getElementById("modalLocation").innerHTML = checkVal.value;
   document.getElementById("modalCheckin").innerHTML = splitData[0];
   document.getElementById("modalCheckout").innerHTML = splitData[2];
   document.getElementById("Guests").innerHTML = data;
@@ -243,9 +244,7 @@ var searchValue = async (e) => {
 
 var show = (matchData) => {
   if (matchData.length > 0) {
-    const showhtml = matchData
-      .map((match) => `<li>${match.Name}</li>`)
-      .join("");
+    const showhtml = matchData.map((check) => `<p>${check.Name}</p>`).join("");
     list.innerHTML = showhtml;
     list.onclick = function (e) {
       const clickedValue = e.target.innerText;
