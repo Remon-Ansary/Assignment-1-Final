@@ -350,7 +350,7 @@
                 </span>
               </div> -->
             </div>
- 
+<!--  
             <div class="col-2">
               <button
                 class="btn btn-warning"
@@ -360,7 +360,48 @@
               >
                 Search
               </button>
-            </div>
+            </div> -->
+           
+
+  <!-- Trigger the modal with a button -->
+  <div class="col-2">
+              <button
+                class="btn btn-warning"
+                type="button"
+                id="search"
+                onclick="allData()"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                Search
+              </button>
+            </div> 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <ul>Check In - Check Out: <span id="modalCheckin"></span></ul>
+             <ul ><span id="modalCheckouts"></span></ul>
+                <ul>Guests: <span id="Guests"></span></ul>
+                   <ul> Price Range:<span id="priceRange"></span></ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
           </div>
 
       

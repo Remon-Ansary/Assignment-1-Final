@@ -98,7 +98,9 @@
   );
 })();
 
-// start
+//-----Navigation area finish-------
+
+// Range selector
 var slideg1;
 var slideg2;
 function getVals() {
@@ -136,6 +138,7 @@ window.onload = function () {
   }
 };
 
+// -----Guest Number---
 //initialising a variable name data
 var data = 0;
 
@@ -167,31 +170,19 @@ function decrement() {
 //   .then((d) => {
 //     console.log(d);
 //   });
+
+// To Stop dropdown behaviour
 $(document).on("click", ".dropdown-menu", function (e) {
   e.stopPropagation();
 });
 
-// slider
-
-// date picker
+// Date Picker
 var hdpkr = new HotelDatepicker(document.getElementById("input-id"));
 
 var s = this.startDate;
 var input = document.getElementById("input-id");
 
-// input.addEventListener(
-//   "afterClose",
-//   function getValue() {
-//     console.log(this.startDate);
-//   },
-//   false
-// );
-// function getNextMonth(month) {
-//   // Get next month date
-//   const _m = new Date(month.valueOf());
-
-//   return new Date(_m.setMonth(_m.getMonth() + 1, 1));
-// }
+//Showing data in display
 function countGuest() {
   document.getElementById("count-value").innerHTML = data;
 }
@@ -215,4 +206,9 @@ function allData() {
   console.log(slideg1);
   console.log(slideg2);
   console.log(input.value);
+
+  document.getElementById("modalCheckin").innerHTML = input.value;
+  document.getElementById("Guests").innerHTML = data;
+  document.getElementById("priceRange").innerHTML =
+    "৳" + slideg1 + "-" + "৳" + slideg2;
 }
