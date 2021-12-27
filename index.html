@@ -128,7 +128,7 @@
                         <i class="fas fa-search"></i>
                       </div> -->
 
-            <div class="col-md-2">
+            <div class="col-md-3">
                
            
               <form class="card " style="margin-top:30px">
@@ -187,15 +187,15 @@
                   </div>
 
                   <div class="col">
-                      <span class="dropdown"
+                      <span class="dropdown" 
                     ><span class="dropdown-toggle" data-toggle="dropdown">
                     </span>
                     <div class="dropdown-menu "  class="quantity">
                    
-                      <div class="card" style="align-items: center;">
+                      <div class="card" style="align-items: center;height: 12vh;">
                         <div class="container"></div>
 
-                        <div class="qty mt-5" >
+                        <div class="qty " >
                           <span   class="minus bg-warning" onclick="decrement()"
                             >-</span
                           >
@@ -209,15 +209,19 @@
                             >+</span
                           >
                         </div>
-                      </div>
-                      <button
+                        <Span style="float: right">   
+                        <button 
                         data-toggle="dropdown"
-                        class="btn btn-success"
+                        class="btn btn-warning"
                         style="float: right"
                         onclick="countGuest()"
                       >
                         Apply
-                      </button>
+                      </button></Span>
+
+                      
+                      </div>
+                     
                     </div>
                   </span>
                   </div>
@@ -268,7 +272,50 @@
            
 
             <div class="col-md-2">
-              <div >
+                <form class="card " style="margin-top:30px;height:40px" >
+                <div class=" row no-gutters align-items-center " style="padding:5px">
+                  <div class="col-auto">
+                    <i class="fas fa-"> &nbsp;<span id ="price-value">Price Range</span></i>
+                  </div>
+
+                  <div class="col">
+                     <span class="dropdown" 
+                    ><span class="dropdown-toggle" data-toggle="dropdown">
+                    </span>
+                     <div class="dropdown-menu "  class="quantity">
+                      <div class="row"></div>
+                      <div class="card"  style="align-items: center;height: 8vh;">
+                        <div class="container"></div>
+                      <div class="range-slider">
+                       <span class="rangeValues"></span>
+                      <input value="0" min="0" max="50000" step="500" type="range" />
+                     <input
+                          value="50000"
+                          min="1000"
+                          max="50000"
+                          step="500"
+                         type="range"/>
+                         </div>
+
+                      </div>
+                      <br>
+                      <button
+                        data-toggle="dropdown"
+                        class="btn btn-warning lg"
+                        style="float: right"
+                        onclick="priceRange()"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </span>
+                  </div>
+
+                 
+
+                </div>
+              </form>
+              <!-- <div >
                 <span class="form-control "
                   ></i> <span id ="price-value">Price Range</span>
                   <span class="dropdown" 
@@ -301,12 +348,12 @@
                     </div>
                   </span>
                 </span>
-              </div>
+              </div> -->
             </div>
  
             <div class="col-2">
               <button
-                class="btn btn-lg btn-success"
+                class="btn btn-warning"
                 type="button"
                 id="search"
                 onclick="allData()"
