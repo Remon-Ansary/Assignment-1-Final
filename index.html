@@ -119,9 +119,9 @@
                   </div>
                 </div>
               </div> -->
-                 <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-12">
-        <form class="card card-lg">
+                 
+  
+      
           <div class="card-body row no-gutters align-items-center">
             <!-- <div class="col-auto">
 
@@ -129,20 +129,31 @@
                       </div> -->
 
             <div class="col-md-2">
-              <div class="form">
-                <i class="fa fa-search"></i>
-                <input
-                  type="text"
-                  class="form-control form-input"
-                  placeholder="Search..."
-                />
-                <span class="left-pan"></span>
-              </div>
+               
+           
+              <form class="card " style="margin-top:30px">
+                <div class=" row no-gutters align-items-center " style="padding:5px">
+                  <div class="col-auto">
+                    <i class="fas fa-search"></i>
+                  </div>
+
+                  <div class="col">
+                    <input class=" form-control form-control-sm " type="search"
+                      placeholder="Search " />
+                  </div>
+
+                 
+
+                </div>
+              </form>
+          
+              
             </div>
 
             <div class="col-md-4">
-              <div class="label">
-                <span style="font-size: 15px" id="input-id">
+            
+              <div class="form-control " >
+                <span style="font-size: 15px ; margin-top: 10px;"id="input-id" >
                 
                   <i class="far fa-calendar-alt"  id="input-id" style="font-size: 20px"> </i
                   > &nbsp; Check in &nbsp; > Check out &nbsp;
@@ -153,10 +164,10 @@
               </div>
             </div>
 
-            <div class="col-md-2">
-              <div class="">
-                <span
-                  ><i class="fas fa-users"></i> Guest
+            <div class="col-md-2" >        
+                <span  class="form-control " >
+                  <div>
+                  <i  class="fas fa-users"></i> Guest</div>
                   <span class="dropdown"
                     ><span class="dropdown-toggle" data-toggle="dropdown">
                     </span>
@@ -166,7 +177,7 @@
                         <div class="container"></div>
 
                         <div class="qty mt-5" >
-                          <span class="minus bg-warning" onclick="decrement()"
+                          <span   class="minus bg-warning" onclick="decrement()"
                             >-</span
                           >
                           <p
@@ -184,18 +195,19 @@
                         data-toggle="dropdown"
                         class="btn btn-success"
                         style="float: right"
+                        onclick="count()"
                       >
                         Apply
                       </button>
                     </div>
                   </span>
                 </span>
-              </div>
+             
             </div>
 
             <div class="col-md-2">
               <div >
-                <span
+                <span class="form-control "
                   ></i> Price
                   <span class="dropdown" 
                     ><span class="dropdown-toggle" data-toggle="dropdown">
@@ -240,14 +252,13 @@
               </button>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
+
+      
     </section>
   </div>
 
  
-<div class="container">
+<!-- <div class="container">
   
         <h2>Dropdowns</h2>
         <div class="dropdown">
@@ -260,7 +271,7 @@
             </ul>
 
         </div>
-    </div>
+    </div> -->
 
 
   <!-- End Hero -->

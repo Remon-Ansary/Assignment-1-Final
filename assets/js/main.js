@@ -190,6 +190,10 @@ var input = document.getElementById("input-id");
 
 //   return new Date(_m.setMonth(_m.getMonth() + 1, 1));
 // }
+function count() {
+  document.getElementById("count-value").innerHTML = data;
+}
+
 console.log(hdpkr);
 function allData() {
   console.log(data);
